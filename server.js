@@ -18,6 +18,9 @@ app.use(cors({
 app.get("/api/message", (req, res) => {
   res.json({ message: "Express backend se response aa gaya! okay" });
 });
+app.get("/api/hello", (req, res) => {
+  res.json({ message: "hello from server!" });
+});
 
 app.post("/api/echo", (req, res) => {
   res.json({ youSent: req.body });
