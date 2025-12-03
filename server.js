@@ -8,8 +8,9 @@ app.use(cors({
   origin: [
     "http://localhost:3000",   // Next.js dev
     "capacitor://localhost",   // Android/iOS app
-    "capacitor://localhost:3000",
+    // "capacitor://localhost:3000",
     "http://localhost",        // कभी-कभी यह भी काम आता है
+    "ionic://localhost",       // कभी-कभी Ionic apps के लिए
   ],
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"]
